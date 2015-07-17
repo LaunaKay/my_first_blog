@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<html>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    "
+</html>
+<body>
+    <div class="container">
+        <h1>Welcome to My First Django App</h1>
+
+        <h2>Name:</h2> <p>{{name}}</p>
+        <h2>Interest:</h2> <p>{{interest}}</p>
+        <h2> Language:</h2> <p>{{language}}</p>
+    </div>
+</body>

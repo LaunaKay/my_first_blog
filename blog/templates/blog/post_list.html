@@ -1,1 +1,12 @@
-<h1> MAIN PAGE</h1>
+{% extends "blog/base.html" %}
+
+{% block content %}
+<h1> LIST PAGE</h1>
+{% for post in posts%}
+<div>
+    <p>published:{{post.published_date}}</p>
+    <h1><a href="{%url "post_detail" pk=post.pk %}">{{post.title}}</a></h1>
+    <p>{{post.text | linebreaks}}</p>
+</div>
+{%endfor %}
+{% endblock content %}
